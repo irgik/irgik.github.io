@@ -55,13 +55,10 @@
 
 .c-tag {
     display: inline-block;
-    height: 1.5em;
     margin: 0;
-    padding: 0 .5em;
+    padding: 0.1em .5em;
     background-color: #e9e9e9;
     color: #414141;
-    line-height: 1.5em;
-    white-space: nowrap;
 }
 .c-tags-list {
     display: flex;
@@ -70,6 +67,11 @@
 }
 .c-tags-list .c-tag {
     margin: .15em;
+}
+@media (min-width: 576px) {
+    .c-tag {
+        white-space: nowrap;
+    }
 }
 
 .c-resume {
